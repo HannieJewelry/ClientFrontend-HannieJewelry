@@ -1,0 +1,73 @@
+import React from "react";
+import Box from "@mui/material/Box";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import { H6 } from "components/Typography";
+import { NavLink } from "components/nav-link";
+import { useTranslation } from "react-i18next";
+
+const ACCORDION_STYLES = {
+  "&:not(:last-child)": { borderBottom: 0 },
+  "&:before": { display: "none" },
+};
+
+const ACCORDION_SUMMARY_STYLES = {
+  padding: 0,
+  minHeight: 48,
+  boxShadow: "none",
+  "& .Mui-expanded": { color: "primary.main", margin: 0 },
+  "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+    margin: 0,
+    "& .MuiSvgIcon-root": { color: "primary.main" },
+  },
+};
+
+// Create a proper React component for menu items
+const MenuItems = ({ data, handleClose }: { data: any[], handleClose: () => void }) => {
+  const { t } = useTranslation();
+  
+  return (
+    <>
+      {data.map((item: any, index: number) => {
+    const link = item.url || item.href;
+
+    if (item.child) {
+      return (
+          <Accordion square key={index} elevation={0} disableGutters sx={ACCORDION_STYLES}>
+            <AccordionSummary expandIcon={<ExpandMore />} sx={ACCORDION_SUMMARY_STYLES}>
+              <H6 fontSize="0.875rem">{t(item.title)}</H6>
+            </AccordionSummary>
+              <Box mx={2}>
+                <MenuItems data={item.child} handleClose={handleClose} />
+              </Box>
+          </Accordion>
+      );
+    }
+
+    if (item.extLink) {
+      return (
+          <H6 fontSize="0.875rem" key={index} py={1}>
+            <NavLink href={link} target="_blank" rel="noopener">
+              {t(item.title)}
+            </NavLink>
+          </H6>
+      );
+    }
+
+    return (
+        <Box key={index} py={1}>
+          <NavLink href={link} onClick={handleClose}>
+            {item.title}
+          </NavLink>
+        </Box>
+    );
+      })}
+    </>
+  );
+};
+
+// Export the function that returns the MenuItems component
+export const renderLevels = (data: any[], handleClose: () => void) => {
+  return <MenuItems data={data} handleClose={handleClose} />;
+};

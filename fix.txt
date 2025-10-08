@@ -1,0 +1,358 @@
+(index):1 [Intervention] Images loaded lazily and replaced with placeholders. Load events are deferred. See https://go.microsoft.com/fwlink/?linkid=2048113
+react-dom-client.development.js:25022 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+axiosInstance.ts:14  Server  Request gửi đi: Object
+axiosInstance.ts:14  Server  Request gửi đi: Object
+(index):1  Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+useAuthCheck.ts:16 Found authentication token in cookie
+report-hmr-latency.ts:26 [Fast Refresh] done in NaNms
+(index):1  Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+(index):1  Unchecked runtime.lastError: Could not establish connection. Receiving end does not exist.
+on-recoverable-error.ts:23  Uncaught Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <Container className="css-wlocr9">
+      <MuiContainer-root as="div" ownerState={{children:[...], ...}} className="MuiContain..." ref={null}>
+        <Insertion>
+        <div className="MuiContain...">
+          <FlexBetween width="100%">
+            <Box display="flex" alignItems="center" justifyContent="space-between" width="100%">
+              <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}} sx={{display:"flex", ...}}>
+                <Insertion>
+                <div className="MuiBox-roo...">
+                  <FlexBox alignItems="center" gap={1}>
+                    <Box display="flex" alignItems="center" gap={1}>
+                      <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}} sx={{display:"flex", ...}}>
+                        <Insertion>
+                        <div className="MuiBox-roo...">
+                          <Styled(Component)>
+                          <Span className="title">
+                            <Styled(Component) component="span" ellipsis={0} className="title">
+                              <Insertion>
+                              <Box component="span" className="title css-0">
+                                <Styled(div) as="span" ref={null} className="title css-..." theme={{...}} sx={{}}>
+                                  <Insertion>
+                                  <span className="title MuiBox-root css-1xdhyk6">
++                                   Miễn phí vận chuyển
+-                                   Free Express Shipping
+                  ...
+          ...
+
+    at throwOnHydrationMismatch (react-dom-client.development.js:4432:11)
+    at prepareToHydrateHostInstance (react-dom-client.development.js:4530:21)
+    at completeWork (react-dom-client.development.js:11350:15)
+    at runWithFiberInDEV (react-dom-client.development.js:844:30)
+    at completeUnitOfWork (react-dom-client.development.js:15393:19)
+    at performUnitOfWork (react-dom-client.development.js:15274:11)
+    at workLoopSync (react-dom-client.development.js:15077:41)
+    at renderRootSync (react-dom-client.development.js:15057:11)
+    at performWorkOnRoot (react-dom-client.development.js:14525:13)
+    at performSyncWorkOnRoot (react-dom-client.development.js:16364:7)
+    at flushSyncWorkAcrossRoots_impl (react-dom-client.development.js:16210:21)
+    at flushSyncWork$1 (react-dom-client.development.js:14827:12)
+    at dispatchEvent (react-dom-client.development.js:20866:21)
+    at dispatchDiscreteEvent (react-dom-client.development.js:20783:11)
+    at span (<anonymous>)
+    at emotion-styled-base.browser.development.esm.js:156:42
+    at Styled(:3000/div) (http://localhost:3000/_next/static/chunks/node_modules_42239eff._.js:5342:16)
+    at Box (createBox.js:30:28)
+    at emotion-styled-base.browser.development.esm.js:156:42
+    at Styled(:3000/Component) (http://localhost:3000/_next/static/chunks/node_modules_42239eff._.js:5342:16)
+    at Span (Typography.tsx:153:5)
+    at Topbar (top-bar.tsx:64:13)
+    at ShopLayout1 (shop-layout-1.tsx:27:7)
+    at IndexPage (page.tsx:15:9)
+axiosInstance.ts:14 Request gửi đi: Object
+axiosInstance.ts:14 Request gửi đi: Object
+axiosInstance.ts:14 Request gửi đi: Object
+axiosInstance.ts:14 Request gửi đi: Object
+axiosInstance.ts:14 Request gửi đi: Object
+product-card.tsx:54 nikecourt-zoom-vapor-cage
+product-card.tsx:54 nikecourt-zoom-vapor-cage
+product-card.tsx:54 classic-rolex-watch
+product-card.tsx:54 classic-rolex-watch
+product-card.tsx:54 nikecourt-zoom-vapor-cage
+product-card.tsx:54 nikecourt-zoom-vapor-cage
+product-card.tsx:54 classic-rolex-watch
+product-card.tsx:54 classic-rolex-watch
+product-card.tsx:54 nikecourt-zoom-vapor-cage
+product-card.tsx:54 nikecourt-zoom-vapor-cage
+product-card.tsx:54 iphone-13-pro-max
+product-card.tsx:54 iphone-13-pro-max
+error.tsx:17 Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (react-dom-client.development.js:3860:11)
+    at enqueueConcurrentHookUpdate (react-dom-client.development.js:3820:14)
+    at dispatchSetStateInternal (react-dom-client.development.js:8121:18)
+    at dispatchSetState (react-dom-client.development.js:8081:7)
+    at FormControl.FormControl.useMemo[childContext] (FormControl.js:185:9)
+    at InputBase.InputBase.useCallback[checkDirty] (InputBase.js:306:7)
+    at InputBase.InputBase.useEnhancedEffect (InputBase.js:311:7)
+    at react-stack-bottom-frame (react-dom-client.development.js:23054:20)
+    at runWithFiberInDEV (react-dom-client.development.js:844:30)
+    at commitHookEffectListMount (react-dom-client.development.js:11977:29)
+    at commitHookLayoutEffects (react-dom-client.development.js:11927:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12688:13)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12866:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11) 'Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.'
+error.tsx:17 Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (react-dom-client.development.js:3860:11)
+    at enqueueConcurrentHookUpdate (react-dom-client.development.js:3820:14)
+    at dispatchSetStateInternal (react-dom-client.development.js:8121:18)
+    at dispatchSetState (react-dom-client.development.js:8081:7)
+    at FormControl.FormControl.useMemo[childContext] (FormControl.js:185:9)
+    at InputBase.InputBase.useCallback[checkDirty] (InputBase.js:306:7)
+    at InputBase.InputBase.useEnhancedEffect (InputBase.js:311:7)
+    at react-stack-bottom-frame (react-dom-client.development.js:23054:20)
+    at runWithFiberInDEV (react-dom-client.development.js:844:30)
+    at commitHookEffectListMount (react-dom-client.development.js:11977:29)
+    at commitHookLayoutEffects (react-dom-client.development.js:11927:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12688:13)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12866:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11) 'Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.'
+error.tsx:17 Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (react-dom-client.development.js:3860:11)
+    at enqueueConcurrentHookUpdate (react-dom-client.development.js:3820:14)
+    at dispatchSetStateInternal (react-dom-client.development.js:8121:18)
+    at dispatchSetState (react-dom-client.development.js:8081:7)
+    at FormControl.FormControl.useMemo[childContext] (FormControl.js:185:9)
+    at InputBase.InputBase.useCallback[checkDirty] (InputBase.js:306:7)
+    at InputBase.InputBase.useEnhancedEffect (InputBase.js:311:7)
+    at react-stack-bottom-frame (react-dom-client.development.js:23054:20)
+    at runWithFiberInDEV (react-dom-client.development.js:844:30)
+    at commitHookEffectListMount (react-dom-client.development.js:11977:29)
+    at commitHookLayoutEffects (react-dom-client.development.js:11927:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12688:13)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12866:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11) 'Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.'
+error.tsx:17 Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (react-dom-client.development.js:3860:11)
+    at enqueueConcurrentHookUpdate (react-dom-client.development.js:3820:14)
+    at dispatchSetStateInternal (react-dom-client.development.js:8121:18)
+    at dispatchSetState (react-dom-client.development.js:8081:7)
+    at FormControl.FormControl.useMemo[childContext] (FormControl.js:185:9)
+    at InputBase.InputBase.useCallback[checkDirty] (InputBase.js:306:7)
+    at InputBase.InputBase.useEnhancedEffect (InputBase.js:311:7)
+    at react-stack-bottom-frame (react-dom-client.development.js:23054:20)
+    at runWithFiberInDEV (react-dom-client.development.js:844:30)
+    at commitHookEffectListMount (react-dom-client.development.js:11977:29)
+    at commitHookLayoutEffects (react-dom-client.development.js:11927:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12688:13)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12866:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11) 'Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.'
+error-boundary-callbacks.ts:80  Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+    at getRootForUpdatedFiber (react-dom-client.development.js:3860:11)
+    at enqueueConcurrentHookUpdate (react-dom-client.development.js:3820:14)
+    at dispatchSetStateInternal (react-dom-client.development.js:8121:18)
+    at dispatchSetState (react-dom-client.development.js:8081:7)
+    at FormControl.FormControl.useMemo[childContext] (FormControl.js:185:9)
+    at InputBase.InputBase.useCallback[checkDirty] (InputBase.js:306:7)
+    at InputBase.InputBase.useEnhancedEffect (InputBase.js:311:7)
+    at react-stack-bottom-frame (react-dom-client.development.js:23054:20)
+    at runWithFiberInDEV (react-dom-client.development.js:844:30)
+    at commitHookEffectListMount (react-dom-client.development.js:11977:29)
+    at commitHookLayoutEffects (react-dom-client.development.js:11927:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12688:13)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12866:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12802:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+    at recursivelyTraverseLayoutEffects (react-dom-client.development.js:13672:11)
+    at commitLayoutEffectOnFiber (react-dom-client.development.js:12686:11)
+
+The above error occurred in the <InputBase> component. It was handled by the <ErrorBoundaryHandler> error boundary.
+onCaughtError @ error-boundary-callbacks.ts:80
+axiosInstance.ts:14 Request gửi đi: Object
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+turbopack-hot-reloader-common.ts:41 [Fast Refresh] rebuilding
+report-hmr-latency.ts:26 [Fast Refresh] done in 194ms
+turbopack-hot-reloader-common.ts:41 [Fast Refresh] rebuilding
+report-hmr-latency.ts:26 [Fast Refresh] done in 181ms
